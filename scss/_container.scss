@@ -1,0 +1,15 @@
+.container {
+    @include make-container;
+}
+
+.container-fluid {
+    @include make-container;
+}
+
+@each $key, $value in $grid-breakpoints {
+    @media (min-width: $value) {
+        .container {
+            max-width: map-get($container-max-widths, $key);
+        }
+    }
+}

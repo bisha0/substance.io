@@ -1,0 +1,21 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@each $key, $value in $grid-breakpoints {
+    @media (min-width: $value) {
+        @for $i from 1 through $grid-cols {
+            @if $key == xs {
+                .col-#{$i} {
+                    flex-basis: (100 / ($grid-cols / $i)) * 1%;
+                }
+            } @else {
+                .col-#{$key}-#{$i} {
+                    flex-basis: (100 / ($grid-cols / $i)) * 1%;
+                }
+            }
+        }
+    }
+}
