@@ -4,12 +4,16 @@
     position: relative;
     font-size: $btn-font-size;
     font-weight: $btn-font-weight;
-    border-radius: $btn-border-radisu;
+    border-radius: $btn-border-radius;
     padding: $btn-padding-y $btn-padding-x;
     text-decoration: none;
     cursor: pointer;
     outline: none;
     transition: all 0.2s ease-in-out;
+}
+
+.btn:focus {
+    box-shadow: $btn-box-shadow;
 }
 
 @each $key, $value in $theme-colors {
