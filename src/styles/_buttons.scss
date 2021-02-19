@@ -37,8 +37,8 @@
         opacity: 0.5;
     }
     100% {
-        width: 500px;
-        height: 500px;
+        width: $btn-ripple-size;
+        height: $btn-ripple-size;
         opacity: 0;
     }
 }
