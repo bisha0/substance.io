@@ -2,8 +2,8 @@
 const buttons = document.querySelectorAll(".btn");
 
 buttons.forEach((button) => {
-    button.addEventListener("click", (e) => {
-        let x = e.clientX - e.target.offsetLeft;
+    button.addEventListener("click", (e: any) => {
+        let x = e.clientX - e.target.offsetTop;
         let y = e.clientY - e.target.offsetTop;
 
         let ripples = document.createElement("span");
