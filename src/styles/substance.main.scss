@@ -1,7 +1,9 @@
-@import "variables";
-@import "mixins";
-@import "reset";
-@import "container";
-@import "grid";
-@import "buttons";
-@import "spacing";
+@import "./utils/vendors";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/reset";
+
+@import "./components/container";
+@import "./components/grid";
+@import "./components/buttons";
+@import "./components/spacing";

@@ -50,24 +50,24 @@ $container-max-widths: (
 ) !default;
 // sass-docs-end layouts variables
 
+// sass-docs-start border variables
+$border-color: #ccc;
+$border-radius-base: 0.5rem;
+// sass-docs-end border variables
+
 // sass-docs-start font variables
-@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap");
 $font-lobster: "Lobster Two", cursive !default;
 $font-pacifico: "Pacifico", cursive !default;
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace !default;
-
-$font-family: $font-family-sans-serif;
+$font-family-ubuntu: Ubuntu;
+$font-family: $font-family-ubuntu;
+$font-size-base: 1rem;
 // sass-docs-end font variables
 
 // sass-docs-start button variables
 $btn-padding-y: 0.25rem;
 $btn-padding-x: 1rem;
-$btn-border-radisu: 7px;
-$btn-font-size: 0.9rem;
+$btn-border-radisu: $border-radius-base;
+$btn-font-size: $font-size-base * 0.9;
+$btn-font-weight: 500;
 $btn-ripple-size: 15rem;
 // sass-docs-end button variables

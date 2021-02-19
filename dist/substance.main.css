@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Ubuntu;
 }
 
 .container {
@@ -355,18 +355,19 @@ body {
   display: inline-block;
   overflow: hidden;
   position: relative;
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
   font-size: 0.9rem;
-  border-radius: 7px;
+  font-weight: 500;
+  border-radius: 0.5rem;
   padding: 0.25rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
   transition: all 0.2s ease-in-out;
 }
 
 .btn-primary {
   background: #007bff;
-  border: 1px solid #007bff;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-primary:hover {
@@ -374,13 +375,13 @@ body {
 }
 
 .btn-outline-primary {
-  border: 1px solid #007bff;
+  border: 1px solid #ccc;
   background: inherit;
   color: #007bff;
 }
 .btn-outline-primary:hover {
   background: #007bff;
-  border: 1px solid #007bff;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-outline-primary:hover:hover {
@@ -389,7 +390,7 @@ body {
 
 .btn-secondary {
   background: #6c757d;
-  border: 1px solid #6c757d;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-secondary:hover {
@@ -397,13 +398,13 @@ body {
 }
 
 .btn-outline-secondary {
-  border: 1px solid #6c757d;
+  border: 1px solid #ccc;
   background: inherit;
   color: #6c757d;
 }
 .btn-outline-secondary:hover {
   background: #6c757d;
-  border: 1px solid #6c757d;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-outline-secondary:hover:hover {
@@ -412,7 +413,7 @@ body {
 
 .btn-success {
   background: #28a745;
-  border: 1px solid #28a745;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-success:hover {
@@ -420,13 +421,13 @@ body {
 }
 
 .btn-outline-success {
-  border: 1px solid #28a745;
+  border: 1px solid #ccc;
   background: inherit;
   color: #28a745;
 }
 .btn-outline-success:hover {
   background: #28a745;
-  border: 1px solid #28a745;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-outline-success:hover:hover {
@@ -435,7 +436,7 @@ body {
 
 .btn-danger {
   background: #dc3545;
-  border: 1px solid #dc3545;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-danger:hover {
@@ -443,13 +444,13 @@ body {
 }
 
 .btn-outline-danger {
-  border: 1px solid #dc3545;
+  border: 1px solid #ccc;
   background: inherit;
   color: #dc3545;
 }
 .btn-outline-danger:hover {
   background: #dc3545;
-  border: 1px solid #dc3545;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-outline-danger:hover:hover {
@@ -458,7 +459,7 @@ body {
 
 .btn-warning {
   background: #ffc107;
-  border: 1px solid #ffc107;
+  border: 1px solid #ccc;
   color: #000000;
 }
 .btn-warning:hover {
@@ -466,13 +467,13 @@ body {
 }
 
 .btn-outline-warning {
-  border: 1px solid #ffc107;
+  border: 1px solid #ccc;
   background: inherit;
   color: #ffc107;
 }
 .btn-outline-warning:hover {
   background: #ffc107;
-  border: 1px solid #ffc107;
+  border: 1px solid #ccc;
   color: #000000;
 }
 .btn-outline-warning:hover:hover {
@@ -481,7 +482,7 @@ body {
 
 .btn-info {
   background: #17a2b8;
-  border: 1px solid #17a2b8;
+  border: 1px solid #ccc;
   color: #000000;
 }
 .btn-info:hover {
@@ -489,13 +490,13 @@ body {
 }
 
 .btn-outline-info {
-  border: 1px solid #17a2b8;
+  border: 1px solid #ccc;
   background: inherit;
   color: #17a2b8;
 }
 .btn-outline-info:hover {
   background: #17a2b8;
-  border: 1px solid #17a2b8;
+  border: 1px solid #ccc;
   color: #000000;
 }
 .btn-outline-info:hover:hover {
@@ -504,7 +505,7 @@ body {
 
 .btn-dark {
   background: #343a40;
-  border: 1px solid #343a40;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-dark:hover {
@@ -512,13 +513,13 @@ body {
 }
 
 .btn-outline-dark {
-  border: 1px solid #343a40;
+  border: 1px solid #ccc;
   background: inherit;
   color: #343a40;
 }
 .btn-outline-dark:hover {
   background: #343a40;
-  border: 1px solid #343a40;
+  border: 1px solid #ccc;
   color: #ffff;
 }
 .btn-outline-dark:hover:hover {
