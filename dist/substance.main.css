@@ -1102,6 +1102,10 @@ li {
   display: block;
   color: inherit;
   padding: 0.5rem 1rem;
+  transition: 0.1s ease;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #eee;
 }
 
 .dropdown-item:nth-child(1) {
@@ -1112,10 +1116,6 @@ li {
 .dropdown-item:nth-last-child(1) {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-}
-
-.dropdown-item:hover {
-  background-color: #eee;
 }
 
 .navbar {

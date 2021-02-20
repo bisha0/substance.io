@@ -22,6 +22,12 @@
     display: block;
     color: inherit;
     padding: $dropdown-padding-y $dropdown-padding-x;
+    transition: 0.1s ease;
+
+    &:hover,
+    &:focus {
+        background-color: #eee;
+    }
 }
 
 .dropdown-item:nth-child(1) {
@@ -32,8 +38,4 @@
 .dropdown-item:nth-last-child(1) {
     border-bottom-right-radius: $dropdown-border-radius;
     border-bottom-left-radius: $dropdown-border-radius;
-}
-
-.dropdown-item:hover {
-    background-color: #eee;
 }
