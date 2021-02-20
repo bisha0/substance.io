@@ -1,5 +1,5 @@
 function main() {
-    // js-docs-start button ripple effect
+    // ts-docs-start button ripple effect
     const buttons = document.querySelectorAll(".btn");
 
     buttons.forEach((button) => {
@@ -19,7 +19,20 @@ function main() {
             }, 1000);
         });
     });
-    // js-docs-end button ripple effect
+    // ts-docs-end button ripple effect
+
+    // ts-docs-start navbar-toggle
+    const navbars = document.querySelectorAll(".navbar");
+
+    navbars.forEach((navbar) => {
+        const toggler = navbar.querySelector(".navbar-toggler");
+        const collapse = navbar.querySelector(".navbar-collapse");
+
+        toggler.addEventListener("click", () => {
+            collapse.classList.toggle("show");
+        });
+    });
+    // ts-docs-end navbar-toggle
 }
 
 main();

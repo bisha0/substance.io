@@ -4,7 +4,7 @@ var __webpack_exports__ = {};
   !*** ./src/index.ts ***!
   \**********************/
 function main() {
-    // js-docs-start button ripple effect
+    // ts-docs-start button ripple effect
     var buttons = document.querySelectorAll(".btn");
     buttons.forEach(function (button) {
         button.addEventListener("click", function (e) {
@@ -20,7 +20,17 @@ function main() {
             }, 1000);
         });
     });
-    // js-docs-end button ripple effect
+    // ts-docs-end button ripple effect
+    // ts-docs-start navbar-toggle
+    var navbars = document.querySelectorAll(".navbar");
+    navbars.forEach(function (navbar) {
+        var toggler = navbar.querySelector(".navbar-toggler");
+        var collapse = navbar.querySelector(".navbar-collapse");
+        toggler.addEventListener("click", function () {
+            collapse.classList.toggle("show");
+        });
+    });
+    // ts-docs-end navbar-toggle
 }
 main();
 

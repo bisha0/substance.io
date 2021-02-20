@@ -1,13 +1,60 @@
-@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
 * {
   margin: 0;
   padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: Ubuntu;
+  line-height: 1.5;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+ul {
+  display: block;
+  list-style: none;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  margin: 0;
+}
+
+li {
+  display: list-item;
+}
+
+.icon::before, .navbar-toggler-icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.navbar-toggler-icon::before {
+  content: "";
+  cursor: pointer;
+  color: #fff;
 }
 
 .container {
@@ -369,6 +416,176 @@ body {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0px 8px rgba(192, 192, 192, 0.6);
 }
 
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #dc004e;
+  padding: 0.5rem 0;
+}
+
+.navbar > .container-fluid,
+.navbar > .container {
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #fff;
+  padding: 0.3125rem 0;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler {
+  border: none;
+  background: inherit;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+}
+
+.navbar-collapse:not(.show) {
+  display: none;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.nav-link {
+  color: #fff;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 540px) {
+  .navbar-expand-sm {
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+
+  .navbar-expand-sm .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-sm .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-sm .nav-link {
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 720px) {
+  .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+
+  .navbar-expand-md .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-md .nav-link {
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-lg .nav-link {
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 1140px) {
+  .navbar-expand-xl {
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+
+  .navbar-expand-xl .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-xl .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-xl .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-xl .nav-link {
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 1320px) {
+  .navbar-expand-xxl {
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+
+  .navbar-expand-xxl .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-xxl .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-xxl .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-xxl .nav-link {
+    padding: 0 0.5rem;
+  }
+}
 .btn {
   display: inline-block;
   overflow: hidden;
