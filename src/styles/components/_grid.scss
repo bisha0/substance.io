@@ -4,6 +4,14 @@
     width: 100%;
 }
 
+@for $i from 1 to $grid-cols {
+    @each $key, $value in $grid-breakpoints {
+        .col-#{$key}-#{$i} {
+            flex-basis: 100%;
+        }
+    }
+}
+
 @each $key, $value in $grid-breakpoints {
     @media (min-width: $value) {
         @for $i from 1 through $grid-cols {
