@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Ubuntu;
+    line-height: 1.5;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin: 0;
+}
+
+li {
+    display: list-item;
+}
