@@ -12,10 +12,6 @@
     transition: all 0.2s ease-in-out;
 }
 
-// .btn:focus {
-//     box-shadow: $btn-box-shadow;
-// }
-
 @each $key, $value in $theme-colors {
     .btn-#{$key} {
         @include button-variant($value);

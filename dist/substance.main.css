@@ -1173,6 +1173,16 @@ li {
   padding: 0.5rem 0;
 }
 
+.navbar-brand,
+.nav-link {
+  transition: 0.3s ease;
+}
+.navbar-brand:hover, .navbar-brand:focus,
+.nav-link:hover,
+.nav-link:focus {
+  opacity: 0.6;
+}
+
 @media (min-width: 540px) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
