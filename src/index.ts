@@ -33,6 +33,25 @@ function main() {
         });
     });
     // ts-docs-end navbar-toggle
+
+    // ts-docs-start dropdown-toggle
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    dropdowns.forEach((dropdown) => {
+        const toggle = dropdown.querySelector(".dropdown-toggle");
+        const menu = dropdown.querySelector(".dropdown-menu");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+
+        window.addEventListener("click", (e: any) => {
+            if (!e.target.matches(".dropdown-toggle")) {
+                menu.classList.remove("show");
+            }
+        });
+    });
+    // ts-docs-end dropdown-toggle
 }
 
 main();

@@ -44,3 +44,11 @@
     margin-bottom: $bottom;
     margin-left: $left;
 }
+
+@mixin fa-icon {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}

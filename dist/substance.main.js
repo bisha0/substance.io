@@ -31,6 +31,21 @@ function main() {
         });
     });
     // ts-docs-end navbar-toggle
+    // ts-docs-start dropdown-toggle
+    var dropdowns = document.querySelectorAll(".dropdown");
+    dropdowns.forEach(function (dropdown) {
+        var toggle = dropdown.querySelector(".dropdown-toggle");
+        var menu = dropdown.querySelector(".dropdown-menu");
+        toggle.addEventListener("click", function () {
+            menu.classList.toggle("show");
+        });
+        window.addEventListener("click", function (e) {
+            if (!e.target.matches(".dropdown-toggle")) {
+                menu.classList.remove("show");
+            }
+        });
+    });
+    // ts-docs-end dropdown-toggle
 }
 main();
 

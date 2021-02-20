@@ -1,20 +1,19 @@
 @import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
 
-.icon::before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-
-    // icon type
+.navbar-toggler-icon::before {
+    @include fa-icon;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-}
-
-.navbar-toggler-icon::before {
-    @extend .icon;
     content: "\f0c9"; // fas fa-bars
     cursor: pointer;
     color: $navbar-fg-color;
+}
+
+.dropdown-toggle::after {
+    @include fa-icon;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107"; // fas fa-angle-down
+    color: inherit;
+    padding-left: 5px;
 }
