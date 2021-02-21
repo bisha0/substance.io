@@ -1,3 +1,16 @@
+// ts-docs-start helper methods
+// ts-docs-start loading method
+function loading(element: HTMLElement) {
+    element.addEventListener("click", () => {
+        element.classList.add("spinner");
+        setTimeout(() => {
+            element.classList.remove("spinner");
+        }, 2000);
+    });
+}
+// ts-docs-end loading method
+// ts-docs-end helper methods
+
 function main() {
     // ts-docs-start button ripple effect
     const buttons = document.querySelectorAll(".btn");

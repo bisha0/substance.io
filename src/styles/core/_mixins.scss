@@ -17,7 +17,8 @@
 
     &:hover {
         // box-shadow: 0 2px 5px rgba($color, 0.4);
-        background: darken($color, $amount: 5%);
+        // background: darken($color, $amount: 5%);
+        opacity: 0.9;
     }
 }
 
@@ -26,7 +27,8 @@
     background: inherit;
     color: $color;
 
-    &:hover {
+    &:hover,
+    &:focus {
         @include button-variant($color);
     }
 }
@@ -51,4 +53,7 @@
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }

@@ -3,6 +3,18 @@ var __webpack_exports__ = {};
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
+// ts-docs-start helper methods
+// ts-docs-start loading method
+function loading(element) {
+    element.addEventListener("click", function () {
+        element.classList.add("spinner");
+        setTimeout(function () {
+            element.classList.remove("spinner");
+        }, 2000);
+    });
+}
+// ts-docs-end loading method
+// ts-docs-end helper methods
 function main() {
     // ts-docs-start button ripple effect
     var buttons = document.querySelectorAll(".btn");

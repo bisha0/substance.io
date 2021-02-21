@@ -2,18 +2,31 @@
 
 .navbar-toggler-icon::before {
     @include fa-icon;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0c9"; // fas fa-bars
+    content: "\f0c9";
     cursor: pointer;
     color: $navbar-fg-color;
 }
 
 .dropdown-toggle::after {
     @include fa-icon;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f107"; // fas fa-angle-down
+    content: "\f107";
     color: inherit;
     padding-left: 5px;
+}
+
+.spinner::before {
+    @include fa-icon;
+    content: "\f1ce";
+    font-size: 0.9rem;
+    color: inherit;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
