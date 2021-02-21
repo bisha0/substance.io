@@ -58,6 +58,21 @@ function main() {
         });
     });
     // ts-docs-end dropdown-toggle
+    // ts-docs-start dialog-toggle
+    var dialogToggles = document.querySelectorAll('[data-toggle~="dialog"]');
+    dialogToggles.forEach(function (toggle) {
+        var dialog = document.querySelector(toggle.dataset.target);
+        var close = dialog.querySelectorAll("[data-close]");
+        toggle.addEventListener("click", function () {
+            dialog.classList.toggle("show");
+        });
+        close.forEach(function (el) {
+            el.addEventListener("click", function () {
+                dialog.classList.remove("show");
+            });
+        });
+    });
+    // ts-docs-end dialog-toggle
 }
 main();
 

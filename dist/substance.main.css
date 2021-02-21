@@ -553,6 +553,20 @@ li {
     transform: rotate(360deg);
   }
 }
+.close::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -1217,6 +1231,98 @@ li {
   border-bottom-left-radius: 0.5rem;
 }
 
+.dialog:not(.show) {
+  display: none;
+}
+
+.dialog {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  max-width: 90vw;
+  -webkit-animation-name: dialog-slide-top;
+  -webkit-animation-duration: 0.5s;
+  animation-name: dialog-slide-top;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes dialog-slide-top {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes dialog-slide-top {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.dialog-header {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-title {
+  line-height: 1.5;
+}
+
+.dialog-body {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.dialog-footer {
+  margin: 1rem;
+}
+
+@media (min-width: 576px) {
+  .dialog-content {
+    max-width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .dialog-content {
+    max-width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .dialog-content {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .dialog-content {
+    max-width: 1140px;
+  }
+}
 .navbar {
   position: relative;
   display: flex;

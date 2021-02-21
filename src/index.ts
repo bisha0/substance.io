@@ -13,7 +13,7 @@ function loading(element: HTMLElement) {
 
 function main() {
     // ts-docs-start button ripple effect
-    const buttons = document.querySelectorAll(".btn");
+    const buttons: NodeListOf<HTMLElement> = document.querySelectorAll(".btn");
 
     buttons.forEach((button) => {
         button.addEventListener("click", (e: any) => {
@@ -35,11 +35,13 @@ function main() {
     // ts-docs-end button ripple effect
 
     // ts-docs-start navbar-toggle
-    const navbars = document.querySelectorAll(".navbar");
+    const navbars: NodeListOf<HTMLElement> = document.querySelectorAll(
+        ".navbar"
+    );
 
     navbars.forEach((navbar) => {
-        const toggler = navbar.querySelector(".navbar-toggler");
-        const collapse = navbar.querySelector(".navbar-collapse");
+        const toggler: HTMLElement = navbar.querySelector(".navbar-toggler");
+        const collapse: HTMLElement = navbar.querySelector(".navbar-collapse");
 
         toggler.addEventListener("click", () => {
             collapse.classList.toggle("show");
@@ -48,11 +50,13 @@ function main() {
     // ts-docs-end navbar-toggle
 
     // ts-docs-start dropdown-toggle
-    const dropdowns = document.querySelectorAll(".dropdown");
+    const dropdowns: NodeListOf<HTMLElement> = document.querySelectorAll(
+        ".dropdown"
+    );
 
     dropdowns.forEach((dropdown) => {
-        const toggle = dropdown.querySelector(".dropdown-toggle");
-        const menu = dropdown.querySelector(".dropdown-menu");
+        const toggle: HTMLElement = dropdown.querySelector(".dropdown-toggle");
+        const menu: HTMLElement = dropdown.querySelector(".dropdown-menu");
 
         toggle.addEventListener("click", () => {
             menu.classList.toggle("show");
@@ -65,6 +69,30 @@ function main() {
         });
     });
     // ts-docs-end dropdown-toggle
+
+    // ts-docs-start dialog-toggle
+    const dialogToggles: NodeListOf<HTMLElement> = document.querySelectorAll(
+        '[data-toggle~="dialog"]'
+    );
+
+    dialogToggles.forEach((toggle: HTMLButtonElement) => {
+        const dialog: HTMLElement = document.querySelector(
+            toggle.dataset.target
+        );
+        const close: NodeListOf<HTMLElement> = dialog.querySelectorAll(
+            "[data-close]"
+        );
+
+        toggle.addEventListener("click", () => {
+            dialog.classList.toggle("show");
+        });
+        close.forEach((el) => {
+            el.addEventListener("click", () => {
+                dialog.classList.remove("show");
+            });
+        });
+    });
+    // ts-docs-end dialog-toggle
 }
 
 main();

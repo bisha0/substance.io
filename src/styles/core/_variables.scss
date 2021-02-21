@@ -54,6 +54,14 @@ $spacers: (
 ) !default;
 // sass-docs-end spacers variables
 
+// scss-docs-start position-map
+$position-values: (
+    0: 0,
+    50: 50%,
+    100: 100%,
+) !default;
+// scss-docs-end position-map
+
 // scss-docs-start variable-gradient
 $gradient: linear-gradient(
     180deg,
@@ -99,6 +107,7 @@ $font-family-ubuntu: Ubuntu !default;
 $font-family: $font-family-ubuntu !default;
 $font-size-base: 1rem !default;
 $font-weight-base: 400 !default;
+$line-height-base: 1.5;
 // sass-docs-end font variables
 
 // sass-docs-start input variables
@@ -143,3 +152,39 @@ $dropdown-padding-x: 1rem !default;
 $dropdown-padding-y: 0.5rem !default;
 $dropdown-border-radius: $border-radius-base;
 // sass-docs-end dropdown variables
+
+// scss-docs-start dialog-variables
+$dialog-inner-padding: $spacer !default;
+
+$dialog-footer-margin-between: 1rem !default;
+
+$dialog-margin: 0.5rem !default;
+
+$dialog-title-line-height: $line-height-base !default;
+
+$dialog-content-border-color: rgba($black, 0.2) !default;
+$dialog-content-border-width: $border-width !default;
+
+$dialog-backdrop-bg: $black !default;
+$dialog-backdrop-opacity: 0.5 !default;
+$dialog-header-padding-y: $dialog-inner-padding !default;
+$dialog-header-padding-x: $dialog-inner-padding !default;
+$dialog-header-padding: $dialog-header-padding-y $dialog-header-padding-x !default; // Keep this for backwards compatibility
+
+$dialog-sm: 300px !default;
+$dialog-md: 500px !default;
+$dialog-lg: 800px !default;
+$dialog-xl: 1140px !default;
+
+$dialog-widths: (
+    sm: $dialog-sm,
+    md: $dialog-md,
+    lg: $dialog-lg,
+    xl: $dialog-xl,
+) !default;
+
+$dialog-fade-transform: translate(0, -50px) !default;
+$dialog-show-transform: none !default;
+$dialog-transition: 0.3s ease-out !default;
+$dialog-scale-transform: scale(1.02) !default;
+// scss-docs-end dialog-variables

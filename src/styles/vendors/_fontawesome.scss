@@ -30,3 +30,11 @@
         transform: rotate(360deg);
     }
 }
+
+.close::after {
+    @include fa-icon;
+    content: "\f00d";
+    color: inherit;
+    cursor: pointer;
+    font-size: $font-size-base + 0.2;
+}
