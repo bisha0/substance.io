@@ -54,15 +54,15 @@
     padding: $nav-link-padding-y 0;
 }
 
-.navbar-brand,
-.nav-link {
-    transition: 0.3s ease;
+// .navbar-brand,
+// .nav-link {
+//     transition: 0.3s ease;
 
-    &:hover,
-    &:focus {
-        opacity: 0.6;
-    }
-}
+//     &:hover,
+//     &:focus {
+//         opacity: 0.6;
+//     }
+// }
 
 @each $key, $value in $container-max-widths {
     @media (min-width: $value) {

@@ -1,3 +1,17 @@
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+// scss-docs-end gray-color-variables
+
 // sass-docs-start theme variables
 $primary: #007bff;
 $secondary: #6c757d;
@@ -7,8 +21,6 @@ $warning: #ffc107;
 $info: #17a2b8;
 $light: #f8f9fa;
 $dark: #343a40;
-$white: #ffff;
-$black: #000000;
 
 $theme-colors: (
     "primary": $primary,
@@ -22,7 +34,15 @@ $theme-colors: (
 ) !default;
 // sass-docs-end theme variables
 
-// sass-docs-start layouts variables
+// sass-docs-start anchor variables
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-shade-percentage: 20% !default;
+$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration: underline !default;
+// sass-docs-end anchor variables
+
+// sass-docs-start spacers variables
 $spacer: 1rem !default;
 $spacers: (
     0: 0,
@@ -32,9 +52,19 @@ $spacers: (
     4: $spacer * 1.5,
     5: $spacer * 3,
 ) !default;
+// sass-docs-end spacers variables
+
+// scss-docs-start variable-gradient
+$gradient: linear-gradient(
+    180deg,
+    rgba($white, 0.15),
+    rgba($white, 0)
+) !default;
+// scss-docs-end variable-gradient
 
 $grid-cols: 12;
 
+// sass-docs-start grid-breakpoints
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
@@ -43,7 +73,9 @@ $grid-breakpoints: (
     xl: 1200px,
     xxl: 1400px,
 ) !default;
+// sass-docs-end grid-breakpoints
 
+// sass-docs-end container-max-widths
 $container-max-widths: (
     sm: 540px,
     md: 720px,
@@ -51,7 +83,7 @@ $container-max-widths: (
     xl: 1140px,
     xxl: 1320px,
 ) !default;
-// sass-docs-end layouts variables
+// sass-docs-end container-max-widths
 
 // sass-docs-start border variables
 $border-width: 1px !default;
