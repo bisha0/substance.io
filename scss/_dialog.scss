@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 .dialog:not(.show) {
     display: none;
 }

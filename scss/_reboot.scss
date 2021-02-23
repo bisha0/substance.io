@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -14,19 +16,12 @@
 }
 
 body {
-    font-family: Ubuntu;
-    line-height: 1.5;
+    font-family: $font-family;
 }
 
 a {
     color: $link-color;
     text-decoration: $link-decoration;
-
-    &:hover,
-    &:focus {
-        color: $link-hover-color;
-        text-decoration: $link-hover-decoration;
-    }
 }
 
 ul {

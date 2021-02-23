@@ -48,6 +48,9 @@ function main() {
     dropdowns.forEach(function (dropdown) {
         var toggle = dropdown.querySelector(".dropdown-toggle");
         var menu = dropdown.querySelector(".dropdown-menu");
+        // toggle.classList.add("icon angle-down");
+        toggle.classList.add("icon");
+        toggle.classList.add("angle-down");
         toggle.addEventListener("click", function () {
             menu.classList.toggle("show");
         });

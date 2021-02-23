@@ -58,6 +58,10 @@ function main() {
         const toggle: HTMLElement = dropdown.querySelector(".dropdown-toggle");
         const menu: HTMLElement = dropdown.querySelector(".dropdown-menu");
 
+        // toggle.classList.add("icon angle-down");
+        toggle.classList.add("icon");
+        toggle.classList.add("angle-down");
+
         toggle.addEventListener("click", () => {
             menu.classList.toggle("show");
         });

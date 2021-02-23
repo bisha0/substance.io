@@ -4,10 +4,10 @@
     "description": "",
     "private": true,
     "scripts": {
-        "start": "npm run webpack:watch & npm run sass:watch & npm run webpack:serve",
+        "start": "npm run webpack:watch & npm run webpack:serve & npm run css:watch",
         "webpack:watch": "webpack --config webpack.config.js --watch",
         "webpack:serve": "webpack serve",
-        "sass:watch": "sass --watch ./src/styles:./dist"
+        "css:watch": "sass --watch scss:dist"
     },
     "repository": {
         "type": "git",

@@ -36,6 +36,5 @@ module.exports = {
         contentBase: path.join(__dirname, "dist"),
         watchContentBase: true,
         compress: true,
-        port: 3000,
     },
 };

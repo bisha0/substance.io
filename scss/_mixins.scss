@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin make-container {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -10,7 +12,8 @@
     background: $color;
     border: 1px solid $border-color;
 
-    @if $color == $warning or $color == $info or $color == $light {
+    @if $color == $warning-main or $color == $info-main or $color == $light-main
+    {
         color: $black;
     } @else {
         color: $white;
@@ -27,7 +30,7 @@
     border: 1px solid $border-color;
     background: inherit;
 
-    @if $color == $light {
+    @if $color == $light-main {
         color: $black;
     } @else {
         color: $color;
