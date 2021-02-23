@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 .navbar {
     position: relative;
     display: flex;
@@ -50,18 +52,7 @@
 
 .nav-link {
     color: $navbar-fg-color;
-    display: block;
     padding: $nav-link-padding-y 0;
-}
-
-.navbar-brand,
-.nav-link {
-    transition: 0.3s ease;
-
-    &:hover,
-    &:focus {
-        opacity: 0.6;
-    }
 }
 
 @each $key, $value in $container-max-widths {

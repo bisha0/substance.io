@@ -1,0 +1,87 @@
+@use './variables' as *;
+
+.dialog:not(.show) {
+    display: none;
+}
+
+.dialog {
+    position: fixed;
+    z-index: 1000;
+    // padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: $dialog-backdrop-bg;
+    background-color: rgba($dialog-backdrop-bg, $dialog-backdrop-opacity);
+}
+
+.dialog-content {
+    background-color: $white;
+    margin: auto;
+    padding: $dialog-inner-padding;
+    border: 1px solid $gray-300;
+    border-radius: 0.5rem;
+    max-width: 90vw;
+
+    // transition: $dialog-transition;
+    -webkit-animation-name: dialog-slide-top;
+    -webkit-animation-duration: 0.5s;
+    animation-name: dialog-slide-top;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes dialog-slide-top {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes dialog-slide-top {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.dialog-header {
+    padding: $dialog-header-padding;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-title {
+    line-height: $dialog-title-line-height;
+}
+
+.dialog-body {
+    border-top: $dialog-content-border-width solid $dialog-content-border-color;
+    border-bottom: $dialog-content-border-width solid
+        $dialog-content-border-color;
+    padding: $dialog-inner-padding;
+}
+
+.dialog-footer {
+    margin: $dialog-footer-margin-between;
+}
+
+@each $key, $value in $grid-breakpoints {
+    @media (min-width: $value) {
+        .dialog-content {
+            max-width: map-get($dialog-widths, $key);
+        }
+    }
+}

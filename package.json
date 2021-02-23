@@ -2,29 +2,28 @@
     "name": "substance.io",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "private": true,
     "scripts": {
-        "start": "npm run webpack:watch & npm run sass:watch & npm run webpack:serve",
-        "webpack:watch": "webpack --config webpack.config.js --watch",
-        "webpack:serve": "webpack serve",
-        "sass:watch": "sass --watch ./src/styles:./dist"
+        "babel:build": "babel js -d dist",
+        "babel:watch": "babel - js -d dist",
+        "css:build": "sass scss:dist",
+        "css:watch": "sass --watch scss:dist"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/bisha0/substance.io.git"
     },
-    "author": "bisha",
+    "author": "https://github.com/bisha0",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/bisha0/substance.io/issues"
     },
     "homepage": "https://github.com/bisha0/substance.io#readme",
     "devDependencies": {
-        "sass": "^1.32.8",
-        "ts-loader": "^8.0.17",
-        "typescript": "^4.1.5",
-        "webpack": "^5.23.0",
-        "webpack-cli": "^4.5.0",
-        "webpack-dev-server": "^3.11.2"
-    }
+        "@babel/cli": "^7.13.0",
+        "@babel/core": "^7.13.1",
+        "@babel/preset-env": "^7.13.5",
+        "sass": "^1.32.8"
+    },
+    "dependencies": {}
 }

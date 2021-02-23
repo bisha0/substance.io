@@ -1,4 +1,6 @@
-@each $key, $value in $theme-colors {
+@use './variables' as *;
+
+@each $key, $value in $theme-colors-main {
     .text-#{$key} {
         color: $value !important;
     }

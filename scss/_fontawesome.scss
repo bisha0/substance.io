@@ -1,0 +1,44 @@
+@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
+
+$icon-after-padding-left: 5px;
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.login::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+}
+
+.bars::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
+}
+
+.angle-right::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    padding-left: $icon-after-padding-left;
+}
+
+.angle-up::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f106";
+    padding-left: $icon-after-padding-left;
+}
+
+.angle-down::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    padding-left: $icon-after-padding-left;
+}

@@ -1,22 +1,20 @@
-// ts-docs-start helper methods
-// ts-docs-start loading method
-function loading(element: HTMLElement) {
-    element.addEventListener("click", () => {
-        element.classList.add("spinner");
-        setTimeout(() => {
-            element.classList.remove("spinner");
-        }, 2000);
-    });
-}
-// ts-docs-end loading method
-// ts-docs-end helper methods
+// // ts-docs-start loading method
+// function loading(element) {
+//     element.addEventListener("click", () => {
+//         element.classList.add("spinner");
+//         setTimeout(() => {
+//             element.classList.remove("spinner");
+//         }, 2000);
+//     });
+// }
+// // ts-docs-end loading method
 
 function main() {
     // ts-docs-start button ripple effect
     const buttons = document.querySelectorAll(".btn");
 
     buttons.forEach((button) => {
-        button.addEventListener("click", (e: any) => {
+        button.addEventListener("click", (e) => {
             let x = e.clientX - e.target.offsetLeft;
             let y = e.clientY - e.target.offsetTop;
 
@@ -54,17 +52,39 @@ function main() {
         const toggle = dropdown.querySelector(".dropdown-toggle");
         const menu = dropdown.querySelector(".dropdown-menu");
 
+        // toggle.classList.add("icon angle-down");
+        toggle.classList.add("icon");
+        toggle.classList.add("angle-down");
+
         toggle.addEventListener("click", () => {
             menu.classList.toggle("show");
         });
 
-        window.addEventListener("click", (e: any) => {
+        window.addEventListener("click", (e) => {
             if (!e.target.matches(".dropdown-toggle")) {
                 menu.classList.remove("show");
             }
         });
     });
     // ts-docs-end dropdown-toggle
+
+    // ts-docs-start dialog-toggle
+    const dialogToggles = document.querySelectorAll('[data-toggle~="dialog"]');
+
+    dialogToggles.forEach((toggle) => {
+        const dialog = document.querySelector(toggle.dataset.target);
+        const close = dialog.querySelectorAll("[data-close]");
+
+        toggle.addEventListener("click", () => {
+            dialog.classList.toggle("show");
+        });
+        close.forEach((el) => {
+            el.addEventListener("click", () => {
+                dialog.classList.remove("show");
+            });
+        });
+    });
+    // ts-docs-end dialog-toggle
 }
 
 main();

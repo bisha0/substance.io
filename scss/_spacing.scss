@@ -1,3 +1,6 @@
+@use './mixins' as *;
+@use './variables' as *;
+
 @each $key, $value in $spacers {
     .p-#{$key} {
         @include padding($value, $value, $value, $value);

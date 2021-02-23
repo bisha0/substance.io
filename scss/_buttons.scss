@@ -1,3 +1,6 @@
+@use './mixins' as *;
+@use './variables' as *;
+
 .btn {
     display: inline-block;
     overflow: hidden;
@@ -18,9 +21,14 @@
     min-height: 0 !important;
     vertical-align: middle;
     line-height: 1.3;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
 }
 
-@each $key, $value in $theme-colors {
+@each $key, $value in $theme-colors-main {
     .btn-#{$key} {
         @include button-variant($value);
     }
