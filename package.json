@@ -2,7 +2,7 @@
     "name": "substance.io",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "private": true,
     "scripts": {
         "start": "npm run webpack:watch & npm run sass:watch & npm run webpack:serve",
         "webpack:watch": "webpack --config webpack.config.js --watch",
@@ -13,7 +13,7 @@
         "type": "git",
         "url": "git+https://github.com/bisha0/substance.io.git"
     },
-    "author": "bisha",
+    "author": "https://github.com/bisha0",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/bisha0/substance.io/issues"
