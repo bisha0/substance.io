@@ -4,8 +4,10 @@
     "description": "",
     "private": true,
     "scripts": {
+        "start": "npm run babel:watch & npm run css:watch",
+        "hugo:serve": "hugo server --config site/config.toml",
         "babel:build": "babel js -d dist",
-        "babel:watch": "babel - js -d dist",
+        "babel:watch": "babel -w js -d dist",
         "css:build": "sass scss:dist",
         "css:watch": "sass --watch scss:dist"
     },

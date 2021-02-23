@@ -42,3 +42,10 @@ $icon-after-padding-left: 5px;
     content: "\f107";
     padding-left: $icon-after-padding-left;
 }
+
+.cog::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f013";
+    padding-right: $icon-after-padding-left;
+}
