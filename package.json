@@ -4,9 +4,7 @@
     "description": "",
     "private": true,
     "scripts": {
-        "start": "npm run webpack:watch & npm run webpack:serve & npm run css:watch",
-        "webpack:watch": "webpack --config webpack.config.js --watch",
-        "webpack:serve": "webpack serve",
+        "css:build": "sass scss:dist",
         "css:watch": "sass --watch scss:dist"
     },
     "repository": {
@@ -20,11 +18,7 @@
     },
     "homepage": "https://github.com/bisha0/substance.io#readme",
     "devDependencies": {
-        "sass": "^1.32.8",
-        "ts-loader": "^8.0.17",
-        "typescript": "^4.1.5",
-        "webpack": "^5.23.0",
-        "webpack-cli": "^4.5.0",
-        "webpack-dev-server": "^3.11.2"
-    }
+        "sass": "^1.32.8"
+    },
+    "dependencies": {}
 }
