@@ -33,6 +33,10 @@ li {
   display: list-item;
 }
 
+code {
+  font-family: "Monaco" !important;
+}
+
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -1135,52 +1139,52 @@ li {
     padding: 0 0.5rem;
   }
 }
-.icon::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+.text-primary {
+  color: #1976d2 !important;
 }
 
-.login::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
+.bg-primary {
+  background-color: #1976d2 !important;
 }
 
-.bars::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
+.text-secondary {
+  color: #dc004e !important;
 }
 
-.angle-right::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
-  padding-left: 5px;
+.bg-secondary {
+  background-color: #dc004e !important;
 }
 
-.angle-up::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
-  padding-left: 5px;
+.text-success {
+  color: #4caf50 !important;
 }
 
-.angle-down::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
-  padding-left: 5px;
+.bg-success {
+  background-color: #4caf50 !important;
 }
 
-.cog::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "";
-  padding-right: 5px;
+.text-danger {
+  color: #f44336 !important;
+}
+
+.bg-danger {
+  background-color: #f44336 !important;
+}
+
+.text-warning {
+  color: #ff9800 !important;
+}
+
+.bg-warning {
+  background-color: #ff9800 !important;
+}
+
+.text-info {
+  color: #2196f3 !important;
+}
+
+.bg-info {
+  background-color: #2196f3 !important;
 }
 
 .p-0 {
@@ -1579,52 +1583,52 @@ li {
   margin-bottom: 3rem;
 }
 
-.text-primary {
-  color: #1976d2 !important;
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
-.bg-primary {
-  background-color: #1976d2 !important;
+.login::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
 }
 
-.text-secondary {
-  color: #dc004e !important;
+.bars::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
 }
 
-.bg-secondary {
-  background-color: #dc004e !important;
+.angle-right::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  padding-left: 5px;
 }
 
-.text-success {
-  color: #4caf50 !important;
+.angle-up::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  padding-left: 5px;
 }
 
-.bg-success {
-  background-color: #4caf50 !important;
+.angle-down::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  padding-left: 5px;
 }
 
-.text-danger {
-  color: #f44336 !important;
-}
-
-.bg-danger {
-  background-color: #f44336 !important;
-}
-
-.text-warning {
-  color: #ff9800 !important;
-}
-
-.bg-warning {
-  background-color: #ff9800 !important;
-}
-
-.text-info {
-  color: #2196f3 !important;
-}
-
-.bg-info {
-  background-color: #2196f3 !important;
+.cog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  padding-right: 5px;
 }
 
 /*# sourceMappingURL=substance.main.css.map */
