@@ -1,4 +1,18 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<p>{{ .Description }}</p>
-{{ .Content }} {{ end }}
+
+<div class="row">
+    <div class="col-md-2">
+        <ul>
+            <li><a href="/containers">Containers</a></li>
+            <li><a href="/buttons">Buttons</a></li>
+            <li><a href="/dropdowns">Dropdowns</a></li>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+        {{ .Content }}
+    </div>
+</div>
+
+{{ end }}

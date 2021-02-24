@@ -948,6 +948,52 @@ code {
   opacity: 0.9;
 }
 
+.btn-light {
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  color: #000;
+}
+.btn-light:hover {
+  opacity: 0.9;
+}
+
+.btn-outline-light {
+  border: 1px solid #ccc;
+  background: inherit;
+  color: #000;
+}
+.btn-outline-light:hover, .btn-outline-light:focus {
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  color: #000;
+}
+.btn-outline-light:hover:hover, .btn-outline-light:focus:hover {
+  opacity: 0.9;
+}
+
+.btn-dark {
+  background: #343a40;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+.btn-dark:hover {
+  opacity: 0.9;
+}
+
+.btn-outline-dark {
+  border: 1px solid #ccc;
+  background: inherit;
+  color: #343a40;
+}
+.btn-outline-dark:hover, .btn-outline-dark:focus {
+  background: #343a40;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+.btn-outline-dark:hover:hover, .btn-outline-dark:focus:hover {
+  opacity: 0.9;
+}
+
 .ripple {
   position: absolute;
   background: #fff;
@@ -1185,6 +1231,22 @@ code {
 
 .bg-info {
   background-color: #2196f3 !important;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
 }
 
 .p-0 {

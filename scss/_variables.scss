@@ -10,14 +10,17 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 
+$light: #f8f9fa;
+$dark: #343a40;
+
 $primary-light: #4791db;
 $secondary-light: #e33371;
 $success-light: #81c784;
 $danger-light: #e57373;
 $warning-light: #ffb74d;
 $info-light: #64b5f6;
-$light-light: #f8f9fa;
-$dark-light: #343a40;
+// $light-light: #f8f9fa;
+// $dark-light: #343a40;
 
 $primary-main: #1976d2;
 $secondary-main: #dc004e;
@@ -25,8 +28,8 @@ $success-main: #4caf50;
 $danger-main: #f44336;
 $warning-main: #ff9800;
 $info-main: #2196f3;
-$light-main: #f8f9fa;
-$dark-main: #343a40;
+// $light-main: #f8f9fa;
+// $dark-main: #343a40;
 
 $primary-dark: #115293;
 $secondary-dark: #9a0036;
@@ -34,8 +37,8 @@ $success-dark: #388e3c;
 $danger-dark: #d32f2f;
 $warning-dark: #f57c00;
 $info-dark: #1976d2;
-$light-dark: #f8f9fa;
-$dark-dark: #343a40;
+// $light-dark: #f8f9fa;
+// $dark-dark: #343a40;
 
 $theme-colors-light: (
     "primary": $primary-light,
@@ -44,6 +47,8 @@ $theme-colors-light: (
     "danger": $danger-light,
     "warning": $warning-light,
     "info": $info-light,
+    "light": $light,
+    "dark": $dark,
 );
 
 $theme-colors-main: (
@@ -53,6 +58,8 @@ $theme-colors-main: (
     "danger": $danger-main,
     "warning": $warning-main,
     "info": $info-main,
+    "light": $light,
+    "dark": $dark,
 );
 
 $theme-colors-dark: (
@@ -62,6 +69,8 @@ $theme-colors-dark: (
     "danger": $danger-dark,
     "warning": $warning-dark,
     "info": $info-dark,
+    "light": $light,
+    "dark": $dark,
 );
 
 $link-color: $primary-main;
